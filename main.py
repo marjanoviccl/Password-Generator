@@ -31,7 +31,7 @@ class MyWindow(QMainWindow):
         self.setStyleSheet('background-color: #5D6D7E')
         self.setGeometry(500, 200, 400, 300)
         self.setFixedSize(self.size())
-        self.setWindowTitle('Generator nasumične šifre')
+        self.setWindowTitle('Password generator')
         self.setWindowIcon(QtGui.QIcon('icon.png'))
         self.label = QtWidgets.QLabel(self)
         self.label.move(50, 50)
@@ -40,7 +40,7 @@ class MyWindow(QMainWindow):
         self.b1 = QtWidgets.QPushButton(self)
         self.b1.setStyleSheet('background-color: #D0D3D4')
         self.b1.resize(140, 40)
-        self.b1.setText('Napravi šifru')
+        self.b1.setText('Make password')
         self.b1.move(125, 25)
         self.b1.clicked.connect(self.pass_button)
 
@@ -48,7 +48,7 @@ class MyWindow(QMainWindow):
         self.b2 = QtWidgets.QPushButton(self)
         self.b2.setStyleSheet('background-color: #D0D3D4')
         self.b2.resize(100, 40)
-        self.b2.setText('Kopiraj')
+        self.b2.setText('Copy')
         self.b2.move(145, 100)
         self.b2.clicked.connect(self.copy_pass)
 
