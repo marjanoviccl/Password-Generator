@@ -1,5 +1,3 @@
-__author__ = 'Luka Marjanović'
-
 import sys, pyperclip
 import random, string
 from PyQt5 import QtWidgets
